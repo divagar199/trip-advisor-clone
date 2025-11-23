@@ -447,44 +447,44 @@ body{
  /* --- Feature Box Container --- */
 
 .feature-box {
-    /* Uses Flexbox to position the media and content columns */
+    
     display: flex;
-    /* Sets a maximum width for the whole box */
+    
     max-width: 900px;
-    margin: 40px auto; /* Centers the box horizontally */
-    background-color: #fff; /* White background */
-    border-radius: 8px; /* Optional slight rounding, though the original looks sharp */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
-    overflow: hidden; /* Ensures image corners respect any border-radius */
+    margin: 40px auto; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
     font-family: Arial, sans-serif;
 }
 
-/* --- Left Column: Media Styling --- */
+
 
 .media-column {
-    /* Takes up 50% of the container width */
+
     flex: 1 1 50%;
 }
 
 .feature-image {
-    /* Makes the image fill its container completely */
+
     width: 100%;
     height: 100%;
-    /* Ensures the image covers the area without distortion */
+
     object-fit: cover; 
     display: block;
 }
 
-/* --- Right Column: Content Styling --- */
+
 
 .content-column {
-    /* Takes up 50% of the container width */
+    
     flex: 1 1 50%;
-    /* Padding to create the white space around the text */
+    
     padding: 60px 40px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: center; 
 }
 
 .sponsored-tag {
@@ -571,31 +571,31 @@ body{
  /* future boxes end  */
 
 /* footer clone */
-/* --- Global Reset & Footer Container --- */
+
 
 .main-footer {
-    /* Background color from the image (light gray/off-white) */
+
     background-color: #f7f7f7;
-    padding: 40px 0; /* Vertical padding */
+    padding: 40px 0; 
     font-family: Arial, sans-serif;
-    color: #4a4a4a; /* Main text color */
+    color: #4a4a4a; 
 }
 
-/* --- Top Section: Column Layout --- */
+
 
 .footer-content {
-    /* Uses Flexbox to arrange the columns side-by-side */
+
     display: flex;
     justify-content: space-between;
-    max-width: 1200px; /* Adjust based on your site's width */
+    max-width: 1200px; 
     margin: 0 auto;
-    padding: 0 20px 40px; /* Padding for the container */
-    border-bottom: 1px solid #e0e0e0; /* Separator line above the bottom bar */
+    padding: 0 20px 40px; 
+    border-bottom: 1px solid #e0e0e0; 
 }
 
 .footer-section {
-    /* Defines the width for each column */
-    flex-basis: 20%; /* Adjust to control column width */
+
+    flex-basis: 20%; 
     padding-right: 20px;
 }
 
@@ -611,7 +611,7 @@ body{
     margin-bottom: 15px;
 }
 
-/* Adjust title spacing for the "Get The App" section */
+
 .footer-section:nth-child(3) .footer-title:last-of-type {
     margin-top: 25px;
 }
@@ -759,9 +759,9 @@ body{
 
 .interest-section {
     padding: 40px 20px;
-    background-color: #ffffff; /* Assuming a white or light background */
+    background-color: #ffffff; 
     font-family: Arial, sans-serif;
-    max-width: 1200px; /* Adjust to fit your site's content width */
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
@@ -781,33 +781,33 @@ body{
 /* --- Card Grid Layout --- */
 
 .card-grid {
-    /* CSS Grid for the 4-column layout */
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 15px; /* Space between the cards */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
 }
 
 /* --- Individual Card Styling --- */
 
 .interest-card {
     display: block;
-    height: 250px; /* Set a fixed height for the cards */
+    height: 250px; 
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    text-decoration: none; /* Remove underline from the anchor tag */
+    text-decoration: none; 
     background-size: cover;
     background-position: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect */
+
 .interest-card:hover {
-    transform: translateY(-5px); /* Lift card slightly */
+    transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Optional: Add a dark overlay gradient to make text stand out */
+
 .interest-card::before {
     content: "";
     position: absolute;
@@ -826,12 +826,11 @@ body{
     color: #fff;
     font-size: 35px;
     font-weight: bold;
-    z-index: 2; /* Keep text above the gradient overlay */
+    z-index: 2; 
 }
 
-/* --- Specific Background Images (IMPORTANT) --- */
 
-/* You must replace the URL paths below with the actual paths to your images */
+
 .outdoors-card {
     background-image: url('images/outdoors.jpg'); 
 }
@@ -868,7 +867,7 @@ body{
 
 @media (max-width: 992px) {
     .card-grid {
-        /* Change to 2 columns on medium screens */
+
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -900,20 +899,18 @@ body{
 @media (max-width: 1024px) {
     .header__main {
         padding: 15px;
-        /* Allow items to wrap when space is tight */
+
         flex-wrap: wrap; 
         justify-content: center;
         gap: 15px; 
     }
 
     .logo__header img {
-        width: 150px; /* Make the logo slightly smaller */
+        width: 150px;
     }
-
-    /* Reduce spacing in the main navigation */
     .sub__header {
         gap: 10px;
-        order: 3; /* Move the sub-header below the logo and sign-in to the side */
+        order: 3; 
         width: 100%;
         justify-content: center;
     }
@@ -923,7 +920,7 @@ body{
         font-size: 0.9rem;
     }
 
-    /* Keep sign-in aligned to the right, or adjust flow */
+
     .signin__header {
         order: 2;
     }
@@ -932,15 +929,15 @@ body{
 /* --- Adjustments for Mobile (max-width: 600px) --- */
 @media (max-width: 600px) {
     .header__main {
-        /* Align items better when wrapping */
+        
         flex-direction: column; 
         align-items: center;
         gap: 10px;
     }
 
     .sub__header {
-        /* Stack the navigation items or hide some on very small screens */
-        display: none; /* Often hidden on mobile to be in a hamburger menu */
+
+        display: none; 
     }
 
     .signin__header {
@@ -950,7 +947,7 @@ body{
     }
 
     .currency__converter {
-        border-left: none; /* Remove separator */
+        border-left: none; 
     }
 
     .signin__header--green {
@@ -967,11 +964,11 @@ body{
     }
     
     .sub__main__header--maincontent {
-        font-size: 2rem; /* Smaller headline */
+        font-size: 2rem; 
     }
 
     .sub__main__header--bottom {
-        /* Allow the filters to wrap */
+
         flex-wrap: wrap; 
         justify-content: center;
         gap: 10px 20px;
@@ -984,14 +981,14 @@ body{
     }
 
     .sub__main__header--searchbar {
-        /* Make the search bar fit the screen better */
+
         width: 90%; 
         max-width: 550px; 
         padding: 8px 15px;
     }
 
     .sub__main__header--searchbar input {
-        width: 100%; /* Important: make input take max width */
+        width: 100%; 
         font-size: 0.9rem;
     }
 
@@ -1004,23 +1001,23 @@ body{
 /* --- Adjustments for Mobile (max-width: 480px) --- */
 @media (max-width: 480px) {
     .sub__main__header--searchbar {
-        /* Stack search input and button for narrow screens */
+
         flex-direction: column; 
         align-items: stretch;
-        background-color: transparent; /* Remove the light gray background */
-        box-shadow: none; /* Remove shadow to blend into the header */
-        padding: 0; /* Remove padding */
+        background-color: transparent; 
+        box-shadow: none; 
+        padding: 0; 
         gap: 10px;
     }
     
     .sub__main__header--searchbar i {
-        display: none; /* Hide magnifying glass icon when stacked */
+        display: none; 
     }
 
     .sub__main__header--searchbar input {
         padding: 10px 15px;
         border: 1px solid #ccc; 
-        border-radius: 50px; /* Re-apply background/border to input itself */
+        border-radius: 50px; 
         background-color: #F7F7F7;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -1034,24 +1031,24 @@ body{
 /* --- Adjustments for Tablet/Medium Screens (max-width: 992px) --- */
 @media (max-width: 992px) {
     .card-grid {
-        /* Change to 2 columns on medium screens */
+
         grid-template-columns: repeat(2, 1fr);
     }
 
     .card-label {
-        font-size: 28px; /* Slightly smaller text */
+        font-size: 28px; 
     }
 }
 
 /* --- Adjustments for Mobile (max-width: 576px) --- */
 @media (max-width: 576px) {
     .card-grid {
-        /* Change to a single column on small mobile screens */
+
         grid-template-columns: 1fr;
     }
     
     .interest-card {
-        height: 200px; /* Make the cards shorter on mobile */
+        height: 200px; 
     }
 }
 /* --- Adjustments for Mobile (max-width: 768px) --- */
@@ -1060,25 +1057,25 @@ body{
         gap: 15px;
     }
     .interest--box {
-        /* Allow max of 2 boxes per row on tablets/small screens */
+
         width: 45%; 
-        max-width: 200px; /* Keep the original max size */
+        max-width: 200px; 
         height: auto; 
     }
     .interest--box img {
-        height: 120px; /* Shorter image height */
+        height: 120px; 
     }
 }
 
 /* --- Adjustments for Mobile (max-width: 480px) --- */
 @media (max-width: 480px) {
     .interest--boxes__container {
-        /* Force single column and center them */
+
         flex-direction: column;
         align-items: center;
     }
     .interest--box {
-        /* Take up more width but keep a max width */
+
         width: 80%; 
         max-width: 300px; 
         height: auto;
@@ -1087,9 +1084,9 @@ body{
 /* --- Adjustments for Mobile (max-width: 768px) --- */
 @media (max-width: 768px) {
     .feature-box {
-        /* The media query is already here, keeping it for clarity */
+
         flex-direction: column;
-        max-width: 90%; /* Use percentage width */
+        max-width: 90%; 
         margin: 30px auto;
     }
     
@@ -1100,30 +1097,30 @@ body{
 /* --- Adjustments for Tablets (max-width: 992px) --- */
 @media (max-width: 992px) {
     .footer-content {
-        /* Allow columns to wrap into two rows */
+
         flex-wrap: wrap; 
         padding-bottom: 20px;
     }
     
     .footer-section {
-        /* Each section takes half the width */
+        
         flex-basis: 45%; 
         margin-bottom: 20px;
     }
 
     .footer-section:nth-child(2n) {
-        padding-right: 0; /* No right padding on the second column of each row */
+        padding-right: 0; 
     }
 
     .footer-site-links {
-        flex-basis: 100%; /* Make this section full width */
+        flex-basis: 100%; 
     }
 }
 
 /* --- Adjustments for Mobile (max-width: 600px) --- */
 @media (max-width: 600px) {
     .footer-content {
-        flex-direction: column; /* Stack all columns */
+        flex-direction: column; 
         padding-bottom: 10px;
     }
 
@@ -1138,14 +1135,14 @@ body{
     }
 
     .footer-bottom-bar {
-        /* Stack the legal info and settings/social sections */
+
         flex-direction: column; 
         align-items: flex-start;
     }
 
     .settings-and-social {
         width: 100%;
-        align-items: flex-start; /* Align dropdowns and icons to the left */
+        align-items: flex-start; 
         margin-top: 20px;
     }
     
@@ -1160,6 +1157,7 @@ body{
         margin-bottom: 5px;
     }
 }
+
 
 
 
